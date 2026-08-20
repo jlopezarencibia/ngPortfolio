@@ -33,11 +33,11 @@ jobs:
       - name: Build Angular App
         run: npm run build -- --configuration production --base-href /${{ github.event.repository.name }}/
 
-      # - name: Add .nojekyll file
-      #   run: touch ./dist/my-project-name/browser/.nojekyll
+      - name: Add .nojekyll file
+        run: touch ./dist/Portfolio/browser/.nojekyll
 
-      # - name: Copy index.html to 404.html
-      #   run: cp ./dist/my-project-name/browser/index.html ./dist/my-project-name/browser/404.html
+      - name: Copy index.html to 404.html
+        run: cp ./dist/Portfolio/browser/index.html ./dist/my-project-name/browser/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/my-project-name/browser'
+          path: './dist/Portfolio/browser'
 
   deploy:
     environment:
