@@ -1,0 +1,13 @@
+<div class="p-4">
+  <div class="h5 text-end mb-4">
+    I speak
+  </div>
+
+  <div class="item-list">
+    @for (set of languageSetData; track set) {
+      <div class="item">
+        <app-item-language [data]="set"></app-item-language>
+      </div>
+    }
+  </div>
+</div>

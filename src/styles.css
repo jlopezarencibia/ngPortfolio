@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --blue-light: #e6f4ff;
+  --blue-main: #1677ff;
+  --blue-dark: #003eb3;
+
+  --green-light: #f6ffed;
+  --green-main: #52c41a;
+  --green-dark: #237804;
+}
+
+.app-body {
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  max-width: 80vh;
+  min-width: 78vh;
+}
+
+@media (max-device-width: 480px) {
+  .app-body {
+    max-width: 95vh;
+    min-width: 94vh;
+  }
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.app-btn-blue {
+  transition: .3s ;
+  background-color: var(--blue-light) !important;
+  border: 1px solid var(--blue-main) !important;
+  color: var(--blue-main) !important;
+}
+
+.app-btn-blue:hover {
+  transition: .3s ;
+  background-color: var(--blue-main) !important;
+  border: 1px solid var(--blue-main) !important;
+  color: var(--blue-light) !important;
+}
+
+.app-btn-blue:active {
+  transition: .3s;
+  background-color: var(--blue-dark) !important;
+  border: 1px solid var(--blue-dark) !important;
+  color: var(--blue-light) !important;
+}
+
+.app-btn-green {
+  transition: .3s ;
+  background-color: var(--green-light) !important;
+  border: 1px solid var(--green-main) !important;
+  color: var(--green-main) !important;
+}
+
+.app-btn-green:hover {
+  transition: .3s ;
+  background-color: var(--green-main) !important;
+  border: 1px solid var(--green-main) !important;
+  color: var(--green-light) !important;
+}
+
+.app-btn-green:active {
+  transition: .3s ;
+  background-color: var(--green-dark) !important;
+  border: 1px solid var(--green-dark) !important;
+  color: var(--green-light) !important;
+}
+
+.item-list .item {
+  margin-bottom: 1rem;
+}
+
+.item-list .item:last-child {
+  margin-bottom: 0;
+}
