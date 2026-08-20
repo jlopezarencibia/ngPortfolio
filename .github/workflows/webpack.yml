@@ -36,8 +36,8 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./dist/Portfolio/browser/.nojekyll
 
-      - name: Copy index.html to 404.html
-        run: cp ./dist/Portfolio/browser/index.html ./dist/my-project-name/browser/404.html
+      # - name: Copy index.html to 404.html
+        # run: cp ./dist/Portfolio/browser/index.html ./dist/my-project-name/browser/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
